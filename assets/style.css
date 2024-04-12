@@ -1,0 +1,103 @@
+/* Main body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #edf2f7;
+    color: #333;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(blue, navy );
+}
+
+/* Container for the entire dashboard */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for the search area and history list */
+.search-container {
+    flex-basis: 30%; /* takes up 30% of the container width */
+    margin-right: 20px; /* adds some space between the columns */
+}
+
+#citySearch,
+#searchHistory {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#cityName {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e40af;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2c5282;
+}
+
+/* Button styles in search history */
+#searchHistory button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /* adds space between buttons */
+    background-color: #9ca3af;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#searchHistory button:hover {
+    background-color: #6b7280;
+}
+
+/* Styling for the weather display area */
+.weather-container {
+    flex-basis: 68%; /* takes up the remaining space */
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#current-weather {
+    border: 1px solid black;
+    padding: 25px;
+    margin-bottom: 40px; /* adds space between current weather and forecast */
+}
+
+/* Individual day forecast styling */
+.forecast-day {
+    display: inline-block;
+    width: 16%;
+    padding: 10px;
+    text-align: center;
+    background-color: #1e40af;
+    color: white;
+    border: 3px solid white;
+
+}
+
+.forecast-day img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}

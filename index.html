@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="assets/style.css"> 
+</head>
+
+<body>
+  <h1>Weather Dashboard</h1>
+  <div class="container">
+    <div class="search-container">
+        <!-- Search form and search history will go here -->
+        <form id="citySearch">
+            <input type="text" id="cityName" placeholder="Enter City Name">
+            <button type="submit">Search</button>
+        </form>
+        <div id="searchHistory">
+            <!-- Dynamically filled with search history -->
+        </div>
+    </div>
+    <div class="weather-container">
+        <!-- Current weather and 5-day forecast will go here -->
+        <div id="current-weather">
+            <!-- Dynamically filled with current weather -->
+        </div>
+        <div id="five-day-weather">
+            <!-- Dynamically filled with 5-day forecast -->
+        </div>
+    </div>
+</div>
+    <!-- my JavaScript file -->
+    <script src="assets/script.js"></script>
+</body>
+</html>
